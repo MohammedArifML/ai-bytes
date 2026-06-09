@@ -99,7 +99,7 @@ if LOGO_FILE.exists():
 st.markdown(
     """
         <h3>
-            AI News, Tools & Research — Simplified!
+            AI News, Tools & Research - Simplified!
         </h3>
     """,
     unsafe_allow_html=True
@@ -110,20 +110,34 @@ metric1, metric2, metric3 = st.columns(3)
 
 with metric1:
     st.metric(
-        "AI Bytes",
+        "Total Bytes",
         len(data)
     )
 
+# Calculate total reading time
+total_seconds = 0
+
+for item in data:
+    read_time = item.get("read_time", "0 sec")
+
+    try:
+        seconds = int(read_time.split()[0])
+        total_seconds += seconds
+    except:
+        pass
+
+reading_minutes = max(1, round(total_seconds / 60))
+
 with metric2:
     st.metric(
-        "Daily Read",
-        "5 Min"
+        "Reading Time",
+        f"{reading_minutes} Mins"
     )
 
 with metric3:
     st.metric(
         "Updated",
-        datetime.now().strftime("%b %d")
+        f"{datetime.now().day} {datetime.now().strftime('%B %Y')}"
     )
 
 # --------------------------------------------------
@@ -145,7 +159,7 @@ col1, col2 = st.columns([3, 1])
 with col1:
     search_term = st.text_input(
         "🔍 Search AI Bytes",
-        placeholder="Search by title, summary, source..."
+        placeholder="Search by title, byte, source..."
     )
 
 with col2:
@@ -175,12 +189,12 @@ filtered_data = []
 for item in data:
 
     title = item.get("title", "")
-    summary = item.get("summary", "")
+    byte = item.get("byte", "")
     category = item.get("category", "")
 
     search_match = (
         search_term.lower() in title.lower()
-        or search_term.lower() in summary.lower()
+        or search_term.lower() in byte.lower()
         or search_term.lower() in category.lower()
     )
 
@@ -273,10 +287,34 @@ if featured_items:
                     unsafe_allow_html=True
                 )
 
-                st.write(item["summary"])
+                st.write(item["byte"])
 
+                # Key Takeaway
+                key_takeaway = item.get("key_takeaway", "")
+
+                if key_takeaway:
+                    st.info(
+                        f"🏆 Key Takeaway: {key_takeaway}"
+                    )
+
+                # Why It Matters
+                st.markdown("**Why It Matters**")
+
+                st.write(
+                    item.get("why_it_matters", "")
+                )
+
+                # Tags
+                tags = item.get("tags", [])
+
+                if tags:
+                    st.caption(
+                        " • ".join(tags)
+                    )
+
+                # Footer
                 st.caption(
-                    f"📖 {item.get('read_time','20 sec')} • {item['source']}"
+                    f"📖 {item.get('read_time', '20 sec')} • {item.get('source', 'Unknown')}"
                 )
 
     st.divider()
@@ -342,27 +380,48 @@ else:
                     unsafe_allow_html=True
                 )
 
-                summary = item.get("summary", "")
+                byte = item.get("byte", "")
 
-                if len(summary) > 250:
-                    summary = summary[:250] + "..."
+                # if len(byte) > 250:
+                #     byte = byte[:250] + "..."
 
-                st.write(summary)
+                st.write(byte)
 
+                # Tags
                 tags = item.get("tags", [])
 
                 if tags:
-
                     st.caption(" • ".join(tags))
 
+                # Key Takeaway
+                key_takeaway = item.get("key_takeaway", "")
+
+                if key_takeaway:
+
+                    st.success(
+                        f"🏆 Key Takeaway: {key_takeaway}"
+                    )
+
+                # Why It Matters
                 with st.expander("Why It Matters"):
                     st.write(
                         item.get("why_it_matters", "")
                     )
 
                 st.caption(
-                    f"📖 {item.get('read_time', '20 sec')} • {item.get('source', 'Unknown')}"
+                    f"📖 {item.get('read_time', '20 sec')}"
                 )
+
+                url = item.get("url", "")
+                source = item.get("source", "Unknown")
+
+                if url:
+                    st.link_button(
+                        f"🔗 Source: {source}",
+                        url
+                    )
+                else:
+                    st.caption(source)
 
 st.divider()
 
