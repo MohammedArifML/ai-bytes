@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "NASA Launches Radiation-Hardened AI Chips for Deep Space",
+    "category": "AI News",
+    "summary": "NASA is testing a next-generation radiation-hardened AI processor that enables spacecraft to make autonomous decisions in deep space. The chip delivers performance hundreds of times greater than current spaceflight computing systems and supports embodied reasoning for mission-critical adjustments without waiting for instructions from Earth.",
+    "why_it_matters": "Deep-space missions suffer from communication delays that make real-time human control impossible. Autonomous AI hardware enables spacecraft to adapt, survive, and navigate independently.",
+    "source": "NASA",
+    "date": "2026-06-09",
+    "featured": true,
+    "read_time": "25 sec",
+    "tags": ["NASA", "Space AI", "Autonomous Systems"]
+  },
+  {
+    "id": 2,
+    "title": "Light-Matter Particles Could Transform AI Computing",
+    "category": "Research",
+    "summary": "Researchers at the University of Pennsylvania have developed hybrid light-matter particles that could dramatically increase AI processing speed while reducing energy consumption. The breakthrough offers a potential alternative to silicon-based computing as AI workloads continue to grow.",
+    "why_it_matters": "AI data centers are approaching power limitations. Photonic computing may provide a sustainable path to larger and faster AI systems.",
+    "source": "University of Pennsylvania Research",
+    "date": "2026-06-09",
+    "featured": true,
+    "read_time": "25 sec",
+    "tags": ["Photonic Computing", "AI Hardware", "Research"]
+  },
+  {
+    "id": 3,
+    "title": "ParseBench Becomes First OCR Benchmark for AI Agents",
+    "category": "AI Tool",
+    "summary": "LlamaIndex introduced ParseBench, an open-source benchmark containing approximately 2,000 human-verified enterprise documents. It evaluates AI systems on document parsing, chart understanding, table extraction, semantic formatting, and visual grounding.",
+    "why_it_matters": "Enterprise AI agents are only as reliable as the data they can understand. ParseBench provides a rigorous standard for measuring document intelligence.",
+    "source": "LlamaIndex",
+    "date": "2026-06-09",
+    "featured": true,
+    "read_time": "20 sec",
+    "tags": ["LlamaIndex", "OCR", "Enterprise AI"]
+  },
+  {
+    "id": 4,
+    "title": "Relational Foundation Models Learn Directly From Databases",
+    "category": "Machine Learning",
+    "summary": "Relational Foundation Models are redefining machine learning by treating enterprise databases as graphs instead of flat tables. Models such as RFM2 can learn directly from multi-table data without extensive feature engineering.",
+    "why_it_matters": "Organizations can unlock predictive insights from complex data much faster while reducing the cost and effort of traditional machine learning workflows.",
+    "source": "Kumo",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "25 sec",
+    "tags": ["Machine Learning", "Databases", "Graphs"]
+  },
+  {
+    "id": 5,
+    "title": "AI Models Learn to Parallelize Their Own Thinking",
+    "category": "AI Agent",
+    "summary": "Researchers at UC Berkeley introduced Adaptive Parallel Reasoning, allowing AI models to decide when to split complex tasks into parallel reasoning threads. This moves beyond traditional sequential chain-of-thought approaches.",
+    "why_it_matters": "Parallel reasoning can dramatically improve efficiency and scalability for enterprise-grade AI systems tackling large and complex problems.",
+    "source": "UC Berkeley",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "20 sec",
+    "tags": ["Reasoning Models", "AI Agents", "Inference"]
+  },
+  {
+    "id": 6,
+    "title": "Forward Deployed Engineers Become Critical AI Talent",
+    "category": "Future Trend",
+    "summary": "A new role called the Forward Deployed Engineer is emerging across AI companies. These professionals work directly with customers to adapt AI systems to real-world business environments and legacy infrastructures.",
+    "why_it_matters": "The success of enterprise AI increasingly depends on specialists who bridge cutting-edge models with practical operational requirements.",
+    "source": "DeepLearning.AI",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "15 sec",
+    "tags": ["Careers", "Enterprise AI", "FDE"]
+  },
+  {
+    "id": 7,
+    "title": "LLMs Exhibit Jagged Intelligence",
+    "category": "Myth vs Reality",
+    "summary": "Andrej Karpathy describes AI intelligence as jagged because models can solve highly complex tasks while simultaneously failing surprisingly simple ones. Their abilities depend heavily on training data, tokenization, and reasoning pathways.",
+    "why_it_matters": "Understanding jagged intelligence helps organizations deploy AI responsibly and avoid unrealistic expectations about model capabilities.",
+    "source": "Andrej Karpathy",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "20 sec",
+    "tags": ["LLMs", "AI Limitations", "Karpathy"]
+  },
+  {
+    "id": 8,
+    "title": "AI Swarms May Threaten Democratic Discourse",
+    "category": "AI Safety",
+    "summary": "Researchers warn that highly realistic AI personas can coordinate across online communities to influence public opinion at scale. These systems can adapt messaging and create artificial consensus that is difficult to detect.",
+    "why_it_matters": "Future cybersecurity challenges may focus less on protecting systems and more on safeguarding public trust and information integrity.",
+    "source": "AI Safety Research",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "25 sec",
+    "tags": ["AI Safety", "Democracy", "Synthetic Media"]
+  },
+  {
+    "id": 9,
+    "title": "Filesystems Are Becoming the Default Agent Interface",
+    "category": "AI Productivity",
+    "summary": "Modern AI agents increasingly rely on files and filesystems rather than large collections of specialized tools. This approach simplifies context management and improves reliability in agentic workflows.",
+    "why_it_matters": "Simpler architectures are easier to maintain, debug, and scale, making AI agents more practical for real-world deployment.",
+    "source": "Files Are All You Need",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "15 sec",
+    "tags": ["AI Agents", "Filesystems", "Productivity"]
+  },
+  {
+    "id": 10,
+    "title": "Battleship Teaches AI Agents Better Questioning Skills",
+    "category": "AI Agent",
+    "summary": "MIT researchers are using the game Battleship to train AI systems in strategic questioning and reasoning. Surprisingly, smaller specialized models can outperform larger frontier models at a fraction of the computational cost.",
+    "why_it_matters": "This research challenges the assumption that bigger models are always better and highlights the value of task-specific optimization.",
+    "source": "MIT",
+    "date": "2026-06-09",
+    "featured": false,
+    "read_time": "20 sec",
+    "tags": ["Strategic Reasoning", "MIT", "AI Agents"]
+  }
+]

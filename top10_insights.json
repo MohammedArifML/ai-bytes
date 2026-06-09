@@ -1,0 +1,52 @@
+[
+  {
+    "rank": 1,
+    "headline": "Agentic OCR & The ParseBench Era",
+    "justification": "Reliable data ingestion is the single biggest bottleneck to enterprise agent adoption."
+  },
+  {
+    "rank": 2,
+    "headline": "The Rise of Relational Foundation Models",
+    "justification": "Automating feature engineering on tabular data unlocks 80% of untapped enterprise AI value."
+  },
+  {
+    "rank": 3,
+    "headline": "Jagged Intelligence and the Token Wall",
+    "justification": "Understanding LLM inconsistency is the key to building safe, production-ready AI systems."
+  },
+  {
+    "rank": 4,
+    "headline": "The Forward Deployed Engineer (FDE)",
+    "justification": "Successful AI adoption is becoming a human-centered integration challenge, not just a technical one."
+  },
+  {
+    "rank": 5,
+    "headline": "Adaptive Parallel Reasoning",
+    "justification": "AI is moving from linear chatbots to multi-threaded, self-organizing autonomous problem solvers."
+  },
+  {
+    "rank": 6,
+    "headline": "Sustainability via Optical Computing",
+    "justification": "AI scaling is hitting a power wall that only non-electronic computing may be able to overcome."
+  },
+  {
+    "rank": 7,
+    "headline": "Hardware-Level AI Independence (NASA)",
+    "justification": "AI is moving into unreachable environments, requiring radiation-hardened autonomous computing."
+  },
+  {
+    "rank": 8,
+    "headline": "AI Swarms: The Threat to Digital Trust",
+    "justification": "Synthetic personas simulating consensus pose a profound risk to democratic integrity and public discourse."
+  },
+  {
+    "rank": 9,
+    "headline": "Files as the Primary Agent Interface",
+    "justification": "Shifting context management to filesystems makes AI agents more reliable than complex tool ecosystems."
+  },
+  {
+    "rank": 10,
+    "headline": "Small Models for Strategic Reasoning",
+    "justification": "Specialized strategic reasoning can be delivered at 1% of the cost of frontier models."
+  }
+]
